@@ -1,0 +1,16 @@
+---
+# Source: test-service/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-service
+  namespace: test-k8s-manifest
+  labels:
+    app: test-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: test-service
