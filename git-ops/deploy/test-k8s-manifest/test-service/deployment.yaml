@@ -8,7 +8,7 @@ metadata:
   name: test-service
   namespace: test-k8s-manifest
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: test-service
